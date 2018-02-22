@@ -8,7 +8,8 @@
 
 
     <!-- css -->
-    <link rel="stylesheet" href="plugin/box-slider.css">
+    <link rel="stylesheet" href="css/boxSlider.css">
+    <link rel="stylesheet" href="css/demo.css">
 
     <!-- jQuery -->
     <script src="js/jquery-2.2.3.min.js"></script>
@@ -19,5 +20,27 @@
 </head>
 <body>
     
+    <div class="box-left"><span>Hover for Left Sliding</span></div>
+    <div class="box-down"><span>Hover for Down Sliding</span></div>
+    <div class="box-right"><span>Hover for Right Sliding</span></div>
+    <div class="box-up"><span>Hover for up Sliding</span></div>
+
+
+    <script>
+
+        $(document).ready(function(){
+
+            // $("your element").up-down-left-right-bottom Slide(with your desired color);
+
+            $(".box-left").leftSlide("yellow"); //for Left Sliding
+            $(".box-down").downSlide("yellow"); //for Down Sliding
+            $(".box-right").rightSlide("yellow"); //for Right Sliding
+            $(".box-up").upSlide("yellow"); //for Up Sliding
+
+
+        });
+
+    </script>
+
 </body>
 </html>

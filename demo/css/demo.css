@@ -1,0 +1,64 @@
+*{
+    font-family: sans-serif;
+}
+
+.box-left{
+    height: 250px;
+    width: 250px;
+    background: black;
+    margin: 15px;
+    float:left;
+}
+
+.box-right{
+    height: 250px;
+    width: 250px;
+    background: black;
+    margin: 15px;
+    float:left;
+}
+
+.box-up{
+    height: 250px;
+    width: 250px;
+    background: black;
+    margin: 15px;
+    float:left;
+}
+
+.box-down{
+    height: 250px;
+    width: 250px;
+    background: black;
+    margin: 15px;
+    float:left;
+}
+
+.box-left span{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.box-right span{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.box-up span{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.box-down span{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}

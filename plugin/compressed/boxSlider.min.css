@@ -1,1 +1,1 @@
-.box-container-down,.box-container-left,.box-container-right,.box-container-up{overflow:hidden;transition:.2s ease}.box-container-left{width:0}.box-container-down{height:0}.box-container-right{position:absolute;left:100%}.box-container-up{position:absolute;top:100%}
+.box-container-down,.box-container-left,.box-container-right,.box-container-up{position:absolute;overflow:hidden;transition:.2s ease}.box-container-left{right:100%;top:0}.box-container-down{bottom:100%}.box-container-right{left:100%;top:0}.box-container-up{top:100%}

@@ -7,16 +7,18 @@ jQuery.fn.leftSlide = function(backcolor){
     var boxHeight = $(element).height();
     var boxWidth = $(element).width();
 
-    $(this).append("<div class='box-container-left' style='height: "+ boxHeight +"px; background:"+ backcolor +"'><div>");
+    $(this).append("<div class='box-container-left' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><div>");
+
+    $(this).css({"position": "relative", "overflow": "hidden"});
 
     $(this).mouseenter(function(e){
         e.preventDefault();
-            $(".box-container-left").css({"width": boxWidth +"px"});
+            $(".box-container-left").css({"right": 0});
     });
 
     $(this).mouseleave(function(e){
         e.preventDefault();
-            $(".box-container-left").css({"width": 0 +"px"});
+            $(".box-container-left").css({"right": 100 + "%"});
     });
 };
 
@@ -28,16 +30,18 @@ jQuery.fn.downSlide = function(backcolor){
     var boxHeight = $(element).height();
     var boxWidth = $(element).width();
 
-    $(this).append("<div class='box-container-down' style='width: "+ boxWidth +"px; background:"+ backcolor +"'><div>");
+    $(this).append("<div class='box-container-down' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><div>");
+
+    $(this).css({"position": "relative", "overflow": "hidden"});
 
     $(this).mouseenter(function(e){
         e.preventDefault();
-            $(".box-container-down").css({"height": boxHeight +"px"});
+            $(".box-container-down").css({"bottom": 0});
     });
 
     $(this).mouseleave(function(e){
         e.preventDefault();
-            $(".box-container-down").css({"height": 0 +"px"});
+            $(".box-container-down").css({"bottom": 100 + "%"});
     });
 };
 
@@ -51,7 +55,7 @@ jQuery.fn.rightSlide = function(backcolor){
 
     $(this).css({"position": "relative", "overflow": "hidden"});
 
-    $(this).append("<div class='box-container-right' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; top: 0; background:"+ backcolor +"'><div>");
+    $(this).append("<div class='box-container-right' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><div>");
 
     $(this).mouseenter(function(e){
         e.preventDefault();
