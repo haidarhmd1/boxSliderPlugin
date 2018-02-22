@@ -1,0 +1,30 @@
+/* Left Slider */
+.box-container-left{
+    width: 0px;
+    overflow: hidden;
+    transition: 0.2s ease;
+  }
+  
+
+  /* Down slider */
+  .box-container-down{
+    height: 0px;
+    overflow: hidden;
+    transition: 0.2s ease;
+  }
+
+  /* Right Slider */
+  .box-container-right{
+    position: absolute;
+    left:100%;
+    overflow: hidden;
+    transition: 0.2s ease;
+  }
+
+  /* Up Slider */
+  .box-container-up{
+    position: absolute;
+    top: 100%;
+    overflow: hidden;
+    transition: 0.2s ease;
+  }
