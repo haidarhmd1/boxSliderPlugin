@@ -1,17 +1,17 @@
 # boxSliderPlugin
 
-#documentation
+# documentation
 
 Add the Plugin script under your jQuery file:
 
-![](screenshot/addinotHTML.png)
+![](screenshot/addinotHTML.PNG)
 
 After that just add your container into your html file:
 
-![](screenshot/definecontainer.png)
+![](screenshot/definecontainer.PNG)
 
 Just initialize the plugins methods with your desired color of yours:
 
-![](screenshot/initializeCode.png)
+![](screenshot/initializeCode.PNG)
 
 And you're ready to go!
