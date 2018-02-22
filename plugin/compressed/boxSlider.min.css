@@ -1,1 +1,2 @@
+/* by Haidar Hammoud haidar.hmd1@gmail.com */
 .box-container-down,.box-container-left,.box-container-right,.box-container-up{position:absolute;overflow:hidden;transition:.2s ease}.box-container-left{right:100%;top:0}.box-container-down{bottom:100%}.box-container-right{left:100%;top:0}.box-container-up{top:100%}

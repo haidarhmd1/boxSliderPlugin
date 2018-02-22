@@ -1,3 +1,4 @@
+// by Haidar Hammoud haidar.hmd1@gmail.com
 
 // left slider
 jQuery.fn.leftSlide = function(backcolor){
