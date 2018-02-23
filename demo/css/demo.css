@@ -64,3 +64,38 @@
     transform: translate(-50%,-50%);
     color: white;
 }
+
+
+
+
+.box-left-1{
+    height: 250px;
+    width: 250px;
+    background: black;
+    margin: 15px;
+    float:left;
+}
+
+.box-right-1{
+    height: 250px;
+    width: 250px;
+    background: black;
+    margin: 15px;
+    float:left;
+}
+
+.box-up-1{
+    height: 250px;
+    width: 250px;
+    background: black;
+    margin: 15px;
+    float:left;
+}
+
+.box-down-1{
+    height: 250px;
+    width: 250px;
+    background: black;
+    margin: 15px;
+    float:left;
+}

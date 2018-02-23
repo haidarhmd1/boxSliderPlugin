@@ -1,14 +1,16 @@
 // by Haidar Hammoud haidar.hmd1@gmail.com
 
+//////////////// Default Style ////////////////////
+
 // left slider
-jQuery.fn.leftSlide = function(backcolor){
+jQuery.fn.leftSlideDefault = function(backcolor, buttonText){
 
     var element = $(this);
 
     var boxHeight = $(element).height();
     var boxWidth = $(element).width();
 
-    $(this).append("<div class='box-container-left' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><div>");
+    $(this).append("<div class='box-container-left' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><button class='btn-style default'>"+ buttonText +"</button><div>");
 
     $(this).css({"position": "relative", "overflow": "hidden"});
 
@@ -24,14 +26,14 @@ jQuery.fn.leftSlide = function(backcolor){
 };
 
 // down slider
-jQuery.fn.downSlide = function(backcolor){
+jQuery.fn.downSlideDefault = function(backcolor,buttonText){
 
     var element = $(this);
 
     var boxHeight = $(element).height();
     var boxWidth = $(element).width();
 
-    $(this).append("<div class='box-container-down' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><div>");
+    $(this).append("<div class='box-container-down' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><button class='btn-style default'>"+ buttonText +"</button><div>");
 
     $(this).css({"position": "relative", "overflow": "hidden"});
 
@@ -47,7 +49,7 @@ jQuery.fn.downSlide = function(backcolor){
 };
 
 // right slider
-jQuery.fn.rightSlide = function(backcolor){
+jQuery.fn.rightSlideDefault = function(backcolor,buttonText){
 
     var element = $(this);
 
@@ -56,7 +58,7 @@ jQuery.fn.rightSlide = function(backcolor){
 
     $(this).css({"position": "relative", "overflow": "hidden"});
 
-    $(this).append("<div class='box-container-right' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><div>");
+    $(this).append("<div class='box-container-right' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><button class='btn-style default'>"+ buttonText +"</button><div>");
 
     $(this).mouseenter(function(e){
         e.preventDefault();
@@ -70,7 +72,7 @@ jQuery.fn.rightSlide = function(backcolor){
 };
 
 // bottom slider
-jQuery.fn.upSlide = function(backcolor){
+jQuery.fn.upSlideDefault = function(backcolor,buttonText){
 
     var element = $(this);
 
@@ -79,7 +81,7 @@ jQuery.fn.upSlide = function(backcolor){
 
     $(this).css({"position": "relative", "overflow": "hidden"});
 
-    $(this).append("<div class='box-container-up' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><div>");
+    $(this).append("<div class='box-container-up' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><button class='btn-style default'>"+ buttonText +"</button><div>");
 
     $(this).mouseenter(function(e){
         e.preventDefault();
@@ -91,3 +93,108 @@ jQuery.fn.upSlide = function(backcolor){
             $(".box-container-up").css({"top": 100+"%"});
     });
 };
+
+
+
+//////////////// Default Style ////////////////////
+
+
+
+
+//////////////// Modern Style ////////////////////
+
+// left slider
+jQuery.fn.leftSlideStyle1 = function(backcolor, buttonText){
+
+    var element = $(this);
+
+    var boxHeight = $(element).height();
+    var boxWidth = $(element).width();
+
+    $(this).append("<div class='box-container-left-style' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><button class='btn-style style-1'>"+ buttonText +"</button><div>");
+
+    $(this).css({"position": "relative", "overflow": "hidden"});
+
+    $(this).mouseenter(function(e){
+        e.preventDefault();
+            $(".box-container-left-style").css({"right": 0});
+    });
+
+    $(this).mouseleave(function(e){
+        e.preventDefault();
+            $(".box-container-left-style").css({"right": 100 + "%"});
+    });
+};
+
+// down slider
+jQuery.fn.downSlideStyle1 = function(backcolor,buttonText){
+
+    var element = $(this);
+
+    var boxHeight = $(element).height();
+    var boxWidth = $(element).width();
+
+    $(this).append("<div class='box-container-down-style' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><button class='btn-style style-1'>"+ buttonText +"</button><div>");
+
+    $(this).css({"position": "relative", "overflow": "hidden"});
+
+    $(this).mouseenter(function(e){
+        e.preventDefault();
+            $(".box-container-down-style").css({"bottom": 0});
+    });
+
+    $(this).mouseleave(function(e){
+        e.preventDefault();
+            $(".box-container-down-style").css({"bottom": 100 + "%"});
+    });
+};
+
+// right slider
+jQuery.fn.rightSlideStyle1 = function(backcolor,buttonText){
+
+    var element = $(this);
+
+    var boxHeight = $(element).height();
+    var boxWidth = $(element).width();
+
+    $(this).css({"position": "relative", "overflow": "hidden"});
+
+    $(this).append("<div class='box-container-right-style' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><button class='btn-style style-1'>"+ buttonText +"</button><div>");
+
+    $(this).mouseenter(function(e){
+        e.preventDefault();
+            $(".box-container-right-style").css({"left": 0});
+    });
+
+    $(this).mouseleave(function(e){
+        e.preventDefault();
+            $(".box-container-right-style").css({"left": 100+"%"});
+    });
+};
+
+// bottom slider
+jQuery.fn.upSlideStyle1 = function(backcolor,buttonText){
+
+    var element = $(this);
+
+    var boxHeight = $(element).height();
+    var boxWidth = $(element).width();
+
+    $(this).css({"position": "relative", "overflow": "hidden"});
+
+    $(this).append("<div class='box-container-up-style' style='height:"+ boxHeight +"px; width: "+ boxWidth +"px; background:"+ backcolor +"'><button class='btn-style style-1'>"+ buttonText +"</button><div>");
+
+    $(this).mouseenter(function(e){
+        e.preventDefault();
+            $(".box-container-up-style").css({"top": 0});
+    });
+
+    $(this).mouseleave(function(e){
+        e.preventDefault();
+            $(".box-container-up-style").css({"top": 100+"%"});
+    });
+};
+
+
+
+//////////////// Modern Style ////////////////////

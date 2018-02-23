@@ -25,6 +25,17 @@
     <div class="box-right"><span>Hover for Right Sliding</span></div>
     <div class="box-up"><span>Hover for up Sliding</span></div>
 
+    <br>
+    <br>
+
+    <!-- Style 1 -->
+
+    
+    <div class="box-left-1"></div>
+    <div class="box-down-1"></div>
+    <div class="box-right-1"></div>
+    <div class="box-up-1"></div>
+
 
     <script>
 
@@ -32,10 +43,19 @@
 
             // $("your element").up-down-left-right-bottom Slide(with your desired color);
 
-            $(".box-left").leftSlide("yellow"); //for Left Sliding
-            $(".box-down").downSlide("yellow"); //for Down Sliding
-            $(".box-right").rightSlide("yellow"); //for Right Sliding
-            $(".box-up").upSlide("yellow"); //for Up Sliding
+
+            // Default Style
+            $(".box-left").leftSlideDefault("yellow", "Click Me"); //for Left Sliding
+            $(".box-down").downSlideDefault("yellow", "Click Me"); //for Down Sliding
+            $(".box-right").rightSlideDefault("yellow", "Click Me"); //for Right Sliding
+            $(".box-up").upSlideDefault("yellow", "Click Me"); //for Up Sliding
+
+            // Style-1
+            $(".box-left-1").leftSlideStyle1("blue", "Click Me"); //for Left Sliding
+            $(".box-down-1").downSlideStyle1("blue", "Click Me"); //for Down Sliding
+            $(".box-right-1").rightSlideStyle1("blue", "Click Me"); //for Right Sliding
+            $(".box-up-1").upSlideStyle1("blue", "Click Me"); //for Up Sliding
+
 
 
         });
